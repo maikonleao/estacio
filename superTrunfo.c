@@ -1,8 +1,8 @@
 #include<stdio.h>
 int main(){
     //informação das cartas
-    char estado1, estado2;
-    char carta1, carta2;
+    char estado1[20], estado2[20];
+    char carta1[20], carta2[20];
     char nomeCidade1, nomeCidade2;
     int populacao1, populacao2;
     float areaKm1, areakm2;
@@ -40,7 +40,7 @@ int main(){
     
     printf("O primeiro estado digitado: %s\n", estado1);
     printf("O código da primeira carta é: %s\n", carta1);
-    printf("O nome da cidade é: %s\n", nomeCidade1);
+    printf("O nome da cidade é: %s\n", &nomeCidade1);
     printf("O númeoro da populacao é: %d\n", populacao1);
     printf("A área tem: %f\n", areaKm1);
     printf("O PIB é: %f\n", pib1);
@@ -78,7 +78,7 @@ int main(){
     
     printf("O segundo estado digitado: %s\n", estado2);
     printf("O código da segunda carta é: %s\n", carta2);
-    printf("O nome da cidade 2 é: %s\n", nomeCidade2);
+    printf("O nome da cidade 2 é: %s\n", &nomeCidade2);
     printf("O númeoro da populacao 2 é: %d\n", populacao2);
     printf("A área tem: %f\n", areakm2);
     printf("O PIB é: %f\n", pib2);
